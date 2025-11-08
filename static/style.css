@@ -7,35 +7,30 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  padding: 10px;
 }
 
 .container {
   text-align: center;
-  width: 100%;
-  max-width: 800px;
+  
 }
 
 #countdown {
   display: flex;
   justify-content: center;
   gap: 20px;
-  font-size: 2rem;
-  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+#countdown p {
+  margin: 2px;
 }
 
 #countdown div {
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 15px;
+  padding: 5px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  word-wrap: break-word;
-  min-width: 100px;
-}
-
-@media (max-width: 600px) {
-  #countdown {
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
