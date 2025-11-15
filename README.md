@@ -4,6 +4,8 @@ This repository is specifically created for free tier Render deployment. It star
 
 The countdown target is formatted using a .env file in the project root folder, ie. "TARGET_DATE=December 13, 2025 12:00:00".
 
+If you want to further develop and test the app, try out the [development branch!](https://github.com/VilleJuhan1/countdown-web-app/tree/development)
+
 ## How to test locally
 
 ```bash
