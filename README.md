@@ -4,29 +4,19 @@ This repository is specifically created for testing out a containerized developm
 
 The countdown target is formatted using a .env file in the project root folder, ie. "TARGET_DATE=December 13, 2025 12:00:00".
 
-## How to test locally
+## How to develop the app further using Docker Compose
+
+Go to project directory and spin up the container environment
 
 ```bash
-# Go to the project folder
-cd CountdownApp
-
-# Create and activate a Python virtual environment for the project
-python3 -m venv venv
-source venv/bin/activate  # use "venv\Scripts\activate" on Windows
-
-# Install dependencies from the requirements.txt file
-pip install -r requirements.txt
-
-# Run the web app
-python3 app.py
+docker compose up
 ```
 
-The App should be running in http://localhost:5001.
+The app should now be running in http://localhost:5001. Every change you make to the following files and folders will prompt a reload:
 
-## How to deploy on Render
+_.py
+_.env
+./static/_
+./templates/_
 
-- Fork the project to your own repository.
-- Go to https://render.com.
-- Create a New Web Service
-- From a Repository → choose your repo.
-- Deploy!
+However you have to reload the browser session for the changes to be visible.
