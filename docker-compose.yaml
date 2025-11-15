@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+    ports:
+      - "5001:5001"
+    command: >
+      watchmedo auto-restart
+      --patterns="*.py;*.env;./templates/*.html;./static/*"
+      --recursive
+      --
+      python app.py

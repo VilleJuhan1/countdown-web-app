@@ -1,6 +1,6 @@
-# Countdown app
+# Countdown app Development version
 
-This repository is specifically created for free tier Render deployment. It starts a very lightweight countdown web app for pre-Christmas party. Just modify the /templates/index.html file if you want to use it for some other purpose.
+This repository is specifically created for testing out a containerized development environment. It starts a very lightweight countdown web app for pre-Christmas party. Just modify the /templates/index.html file if you want to use it for some other purpose.
 
 The countdown target is formatted using a .env file in the project root folder, ie. "TARGET_DATE=December 13, 2025 12:00:00".
 

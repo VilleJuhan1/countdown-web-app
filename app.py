@@ -11,5 +11,6 @@ def home():
     target_date = os.getenv("TARGET_DATE", "January 1, 2026 00:00:00")
     return render_template("index.html", target_date=target_date)
 
+# test change
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=5001, debug=False)
